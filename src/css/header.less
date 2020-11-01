@@ -41,6 +41,8 @@
     font-weight: 700;
     line-height: 56px;
     color: white;
+    margin-top: 120px;
+    margin-bottom: 48px;
 }
 
 .header-text {
@@ -48,6 +50,8 @@
     font-weight: 400;
     line-height: 28px;
     color: white;
+    margin-bottom: 48px;
+    width: 55%;
 }
 
 .about-us {
@@ -96,4 +100,24 @@
 .moon-bg {
     position: absolute;
     top: 0;
+}
+
+.moon {
+    @s: 576px;
+    width: @s;
+    height: @s;
+    position: absolute;
+    user-select: none;
+    bottom: -150px;
+    right: 0;
+}
+
+.stroke {
+    @s: 550px;
+    width: @s;
+    height: @s;
+    position: absolute;
+    user-select: none;
+    bottom: -150px;
+    right: 40px;
 }
