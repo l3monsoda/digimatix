@@ -1,58 +1,102 @@
-.main {
-}
+.main {}
 
 .main-h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    text-align: center;
-    margin-top: 180px;
-    margin-bottom: 76px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 76px;
 }
 
 .main-tabs {
-    .row-flex();
-    margin-bottom: 44px;
+  .row-flex();
+  margin-bottom: 44px;
 }
 
 .hot-offers {
-    margin-right: 48px;
+  margin-right: 48px;
 }
 
 .hot-offers,
 .all-offers {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .offer-tittle {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: @main-purple;
-    text-transform: uppercase;
-    margin-top: 24px;
-    margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @main-purple;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
 
 .offer-text {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .offer-card {
-    width: 260px;
-    margin-right: 64px;
+  width: 260px;
 }
 
-.slick-dots li button:before{
-    font-size: 30px;
-    margin-top: 40px;
+.main-top-row,
+.main-slider-arrows {
+    .row-flex();
+}
+
+.main-slider-arrows {
+    justify-content: space-between;
+    margin-right: 50px;
+
+    svg {
+        fill: @main-purple;
+    }
+}
+
+.slider-prev,
+.slider-next {
+    @s: 38px;
+    width: @s;
+    height: @s;
+    background-color: @white;
+    .row-flex();
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @hover;
+    }
+
+}
+
+.slider-prev {
+    margin-right: 16px;
+}
+
+.main-top-row {
+    justify-content: space-between;
+}
+
+.slick-dots li button:before {
+  font-size: 30px;
+  margin-top: 40px;
 }
 
 .slick-dots li.slick-active button:before {
-    color: @second-purple !important;
+  color: @second-purple  !important;
+}
+
+.custom-arrow {
+    @s: 15px;
+    width: @s;
+    height: @s;
 }

@@ -1,8 +1,8 @@
-.icon-linux::before {
--webkit-mask: url(../img/sprite.svg#linux) no-repeat;
-mask: url(../img/sprite.svg#linux) no-repeat;
+.icon-next-arrow::before {
+-webkit-mask: url(../img/sprite.svg#next-arrow) no-repeat;
+mask: url(../img/sprite.svg#next-arrow) no-repeat;
 }
-.icon-play-button::before {
--webkit-mask: url(../img/sprite.svg#play-button) no-repeat;
-mask: url(../img/sprite.svg#play-button) no-repeat;
+.icon-prev-arrow::before {
+-webkit-mask: url(../img/sprite.svg#prev-arrow) no-repeat;
+mask: url(../img/sprite.svg#prev-arrow) no-repeat;
 }
