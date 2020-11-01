@@ -1,0 +1,8 @@
+.icon-linux::before {
+-webkit-mask: url(../img/sprite.svg#linux) no-repeat;
+mask: url(../img/sprite.svg#linux) no-repeat;
+}
+.icon-play-button::before {
+-webkit-mask: url(../img/sprite.svg#play-button) no-repeat;
+mask: url(../img/sprite.svg#play-button) no-repeat;
+}

@@ -1,0 +1,99 @@
+.header {
+    background-image: url('../img/main-bg.png');
+    background-size: cover;
+    height: 680px;
+    position: relative;
+}
+
+.header-top-row {
+    .row-flex();
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.logo {
+}
+
+.button-order {
+    background-color: @white;
+    // padding: 8px 0px 0px 12px;
+    .row-flex();
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 180px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: @main-purple;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: aqua;
+        color: @second-purple;
+    }
+}
+
+.header-h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+}
+
+.header-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+}
+
+.about-us {
+    background-color: @white;
+    // padding: 8px 0px 0px 12px;
+    .row-flex();
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 156px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: @main-purple;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: aqua;
+        color: @second-purple;
+    }
+}
+
+.header-buttons-block {
+    .row-flex();
+}
+
+.play-button {
+    display: inline-block;
+    // background-color: @main-purple;
+    // @s: 48px;
+    // width: @s;
+    // height: @s;
+    // border-radius: 50%;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.play-button-svg {
+    fill: @white;
+    @s: 20px;
+    width: @s;
+    height: @s;
+}
+
+.moon-bg {
+    position: absolute;
+    top: 0;
+}
