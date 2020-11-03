@@ -6,26 +6,6 @@ window.onload = function () {
     slidesToScroll: 4,
     dots: true,
     arrows: true,
-    responsive: [{
-        breakpoint: 1210,
-        settings: {
-            rows: 2,
-            slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesPerRow: 2
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesPerRow: 1
-        }
-      }
-    ]
   });
 
   $('.slider-prev').on('click', function () {
