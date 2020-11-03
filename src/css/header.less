@@ -3,6 +3,7 @@
     background-size: cover;
     height: 680px;
     position: relative;
+    .side-margin();
 }
 
 .header-top-row {
@@ -13,6 +14,11 @@
 }
 
 .logo {
+}
+
+.header-main {
+    position: relative;
+    z-index: 100;
 }
 
 .button-order {
@@ -28,10 +34,12 @@
     color: @main-purple;
     border-radius: 6px;
     cursor: pointer;
+    transition: all ease .3s;
 
     &:hover {
         background-color: @hover;
         color: @second-purple;
+        transition: all ease .3s;
     }
 }
 
@@ -66,10 +74,12 @@
     color: @main-purple;
     border-radius: 6px;
     cursor: pointer;
+    transition: all ease .3s;
 
     &:hover {
         background-color: @hover;
         color: @second-purple;
+        transition: all ease .3s;
     }
 }
 
@@ -88,11 +98,6 @@
     @s: 20px;
     width: @s;
     height: @s;
-}
-
-.moon-bg {
-    position: absolute;
-    top: 0;
 }
 
 .moon {

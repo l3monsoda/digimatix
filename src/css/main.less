@@ -1,4 +1,6 @@
-.main {}
+.main {
+  .side-margin();
+}
 
 .main-h2 {
   font-size: 40px;
@@ -11,19 +13,32 @@
 
 .main-tabs {
   .row-flex();
-  margin-bottom: 44px;
+  margin-bottom: 34px;
 }
 
 .hot-offers {
   margin-right: 48px;
 }
 
-.hot-offers,
-.all-offers {
+.offers {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   cursor: pointer;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  transition: all ease .3s;
+
+  &:hover {
+    transition: all ease .3s;
+    color: @hover;
+    border-color: @hover;
+  }
+}
+
+.offers-active {
+  color: @main-purple;
+  border-bottom: 2px solid @main-purple;
 }
 
 .offer-tittle {
@@ -40,52 +55,57 @@
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
+  width: 256px;
 }
 
-.offer-img {
+.usual-offer {
+  display: none;
 }
+
+.offer-img {}
 
 .offer-card {
 }
 
 .main-top-row,
 .main-slider-arrows {
-    .row-flex();
+  .row-flex();
 }
 
 .main-slider-arrows {
-    justify-content: space-between;
-    margin-right: 50px;
+  justify-content: space-between;
+  margin-right: 50px;
 
-    svg {
-        fill: @main-purple;
-    }
+  svg {
+    fill: @main-purple;
+  }
 }
 
 .slider-prev,
 .slider-next {
-    @s: 38px;
-    width: @s;
-    height: @s;
-    background-color: @white;
-    .row-flex();
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    cursor: pointer;
+  @s: 38px;
+  width: @s;
+  height: @s;
+  background-color: @white;
+  .row-flex();
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease .3s;
 
-    &:hover {
-        background-color: @hover;
-    }
-
+  &:hover {
+    background-color: @hover;
+    transition: all ease .3s;
+  }
 }
 
 .slider-prev {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .main-top-row {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .slick-dots li button:before {
@@ -98,7 +118,10 @@
 }
 
 .custom-arrow {
-    @s: 15px;
-    width: @s;
-    height: @s;
+  @s: 15px;
+  width: @s;
+  height: @s;
+}
+
+.offers-slider {
 }

@@ -34,6 +34,8 @@
     .row-flex();
     justify-content: space-between;
     width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer-bottom-row {
@@ -61,6 +63,12 @@
     border-radius: 6px;
     color: white;
     text-transform: uppercase;
+    transition: all ease .3s;
+
+    &:hover {
+        transition: all ease .3s;
+        background-color: @hover;
+    }
 }
 
 .form-input {
@@ -78,6 +86,12 @@
     justify-content: center;
 }
 
+.form-input[type="text"],
+.form-input[type="tel"],
+.form-input[type="email"] {
+    padding-left: 20px;
+}
+
 .form-label {
     position: absolute;
     color: white;
@@ -88,7 +102,29 @@
     left: 24px;
 }
 
+.form-label-focused {
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    line-height: 32px;
+    font-weight: 400;
+    top: -25px;
+    left: -10px;
+    padding: 0 15px;
+    z-index: 10;
+
+    &:after {
+        content: "";
+    }
+}
+
 .form-list-item {
     position: relative;
+}
 
+@media (max-width: 1305px) {
+    .form-list {
+        flex-direction: column;
+    }
 }

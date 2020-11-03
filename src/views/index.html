@@ -29,10 +29,8 @@
         </div>
       </div>
     </div>
-    <!-- <div class="moon-bg"> -->
     <img class="stroke" src="assets/img/moon-stroke.png" alt="moon-stroke">
     <img class="moon" src="assets/img/moon.png" alt="moon">
-    <!-- </div> -->
   </header>
 
   <main class="main">
@@ -41,8 +39,8 @@
       <div class="main-content-block">
         <div class="main-top-row">
           <div class="main-tabs">
-            <div class="hot-offers">Горящие предложения</div>
-            <div class="all-offers">Все предложения</div>
+            <div class="hot-offers offers offers-active">Горящие предложения</div>
+            <div class="all-offers offers">Все предложения</div>
           </div>
           <div class="main-slider-arrows">
             <div class="slider-prev"> <svg class=".gallery-arrow .mod-prev .slick-arrow custom-arrow prew-arrow">
@@ -124,19 +122,22 @@
       <h2 class="footer-header">Остались вопросы?</h2>
       <div class="footer-text">Задача организации, в особенности же курс на социально-ориентированный национальный
         проект позволяет оценить значение модели развития.</div>
-      <form action="" class="footer-form">
+      <form action="" class="footer-form" id="footer-form">
         <ul class="form-list">
           <li class="form-list-item">
-            <label for="" class="form-label">Имя</label>
-            <input type="text" class="form-input">
+            <label for="name" class="form-label">Имя</label>
+            <label for="name" class="form-label-focused">Имя</label>
+            <input type="text" class="form-input" name="name" form="footer-form" id="name">
           </li>
           <li class="form-list-item">
-            <label for="" class="form-label">Телефон</label>
-            <input type="text" class="form-input">
+            <label for="phone" class="form-label">Телефон</label>
+            <label for="phone" class="form-label-focused">Телефон</label>
+            <input type="tel" class="form-input" name="phone" form="footer-form" id="phone">
           </li>
           <li class="form-list-item">
-            <label for="" class="form-label">Email</label>
-            <input type="text" class="form-input">
+            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label-focused">Email</label>
+            <input type="email" class="form-input" name="email" form="footer-form" id="email">
           </li>
           <li class="form-list-item">
             <button class="form-submit">Отправить</button>
