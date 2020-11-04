@@ -1,121 +1,170 @@
 .header {
-    background-image: url('../img/main-bg.png');
-    background-size: cover;
-    height: 680px;
-    position: relative;
-    .side-margin();
+  background-image: url('../img/main-bg.png');
+  background-size: cover;
+  height: 680px;
+  position: relative;
+  .side-margin();
 }
 
 .header-top-row {
-    .row-flex();
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 48px;
+  .row-flex();
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
 }
 
-.logo {
-}
+.logo {}
 
 .header-main {
-    position: relative;
-    z-index: 100;
+  position: relative;
+  z-index: 100;
 }
 
 .button-order {
-    background-color: @white;
-    .row-flex();
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 180px;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: @main-purple;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all ease .3s;
+  background-color: @white;
+  .row-flex();
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 180px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: @main-purple;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease .3s;
 
-    &:hover {
-        background-color: @hover;
-        color: @second-purple;
-        transition: all ease .3s;
-    }
+  &:hover {
+    background-color: @hover;
+    color: @second-purple;
+    transition: all ease .3s;
+  }
 }
 
 .header-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: white;
-    margin-top: 120px;
-    margin-bottom: 48px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: white;
+  margin-top: 120px;
+  margin-bottom: 48px;
 }
 
 .header-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: white;
-    margin-bottom: 48px;
-    width: 55%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  margin-bottom: 48px;
+  width: 55%;
 }
 
 .about-us {
-    background-color: @white;
-    .row-flex();
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    width: 156px;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: @main-purple;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all ease .3s;
+  background-color: @white;
+  .row-flex();
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 156px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: @main-purple;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease .3s;
 
-    &:hover {
-        background-color: @hover;
-        color: @second-purple;
-        transition: all ease .3s;
-    }
+  &:hover {
+    background-color: @hover;
+    color: @second-purple;
+    transition: all ease .3s;
+  }
 }
 
 .header-buttons-block {
-    .row-flex();
+  .row-flex();
 }
 
 .play-button {
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 16px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 16px;
 }
 
 .play-button-svg {
-    fill: @white;
-    @s: 20px;
-    width: @s;
-    height: @s;
+  fill: @white;
+  @s: 20px;
+  width: @s;
+  height: @s;
 }
 
 .moon {
-    @s: 576px;
-    width: @s;
-    height: @s;
-    position: absolute;
-    user-select: none;
-    bottom: -150px;
-    right: 0;
+  @s: 576px;
+  width: @s;
+  height: @s;
+  position: absolute;
+  user-select: none;
+  bottom: -150px;
+  right: 0;
 }
 
 .stroke {
-    @s: 550px;
-    width: @s;
-    height: @s;
-    position: absolute;
-    user-select: none;
-    bottom: -150px;
-    right: 40px;
+  @s: 550px;
+  width: @s;
+  height: @s;
+  position: absolute;
+  user-select: none;
+  bottom: -150px;
+  right: 40px;
 }
+
+@media (max-width: 790px) {
+
+  .header-h1 {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .header-text {
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: black 0 2px 2px;
+  }
+
+  .moon,
+  .stroke {
+      right: 0;
+      left: -25px;
+}
+
+   .header-buttons-block {
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+    .play-button,
+    .about-us {
+        margin: 0 auto;
+    }
+
+    .about-us {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1310px) {
+
+    .header-wrapper {
+      width: 980px;
+    }
+  }
+  
+  @media (max-width: 1020px) {
+  
+    .header-wrapper {
+      width: 100%;
+    }
+  }
+  

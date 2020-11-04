@@ -49,6 +49,7 @@
   text-transform: uppercase;
   margin-top: 24px;
   margin-bottom: 8px;
+  margin-left: -50px;
 }
 
 .offer-text {
@@ -58,13 +59,10 @@
   width: 256px;
 }
 
-.usual-offer {
-  display: none;
-}
-
-.offer-img {}
-
 .offer-card {
+  .row-flex();
+  justify-content: center;
+
 }
 
 .main-top-row,
@@ -123,5 +121,40 @@
   height: @s;
 }
 
-.offers-slider {
+.offer-card {
+  display: flex!important;
+}
+
+@media (max-width: 1190px) {
+  .main-wrapper {
+    width: 100%;
+}
+
+  .offer-card {
+    display: flex!important;
+  }
+}
+
+@media (max-width: 560px) {
+  .offer-tittle {
+    margin-left: 0;
+  }
+
+    .offer-text {
+      text-align: center;
+    }
+
+    .offer-card {
+      margin-top: 20px;
+    }
+
+    .main-tabs {
+      margin: 0 auto;
+    }
+
+    .main-slider-arrows {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: 180px;
+    }
 }
